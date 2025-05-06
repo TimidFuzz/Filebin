@@ -7,7 +7,7 @@ An npm library for [filebin.net](https://filebin.net), a free file-sharing platf
 ## Installation
 
 ```bash
-npm install filebin
+npm install filebin.net
 ```
 
 ---
@@ -17,7 +17,7 @@ npm install filebin
 ### Import
 
 ```js
-const { Bin } = require("filebin");
+const { Bin } = require("filebin.net");
 ```
 
 ### Fetching an existing Bin
@@ -63,7 +63,7 @@ const { Bin } = require("filebin");
     console.log(`Uploaded ${file.filename}`);
 
     await bin.downloadEncryptedFile("file.txt", key, iv, "./files");
-    console.log(`Downloaded file: ${file.filename}`);
+    console.log(`Downloaded ${file.filename}`);
 
     await bin.lock();
     console.log(`Locked bin ${bin.id}`);
@@ -257,3 +257,7 @@ file.delete();
 Deletes the file from its bin. Returns the deleted file object
 
 ---
+
+## Contributions
+
+Contributions are welcome!

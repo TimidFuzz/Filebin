@@ -1,6 +1,6 @@
 {
   "name": "filebin.net",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "exports": {
     "import": "./src/lib.mjs",
     "require": "./src/lib.cjs"
